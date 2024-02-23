@@ -2,4 +2,195 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--background-color);
+  color: var(--content-color);
+  font-family: var(--font-family);
+  font-size: var(--content-font-size);
+  font-weight: var(--basic-font-weight);
+  background: var(--background-url) center/cover;
+  background-attachment: fixed;
+}
+
+.decorated-zone::before {
+  content:"";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 10px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  z-index: 2;
+}
+
+.decorated-zone::after {
+  content:"";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 10px;
+  left: 10px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  z-index: 2;
+}
+
+.header-decoration::before {
+  content:"rec";
+  position: absolute;
+  line-height: 25px;
+  top: 10px;
+  right: 38px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.header-decoration::after {
+  content:"";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: end;
+  margin-bottom: 65px;
+}
+
+.header__theme-menu-button {
+  background: none;
+  border: none;
+  text-transform: lowercase;
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  font-size: var(--content-font-size);
+  font-weight: var(--basic-font-weight);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgb(255 0 112 / 0.4);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.page-header {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-weight: var(--accent-font-weight);
+  color: var(--banner-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 95px;
+}
+
+.header {
+  position: relative;
+  padding: 10px;
+  min-height: 668px;
+  display: grid;
+}
+
+.title-decor {
+  font-weight: var(--accent-font-weight);
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
+}
+
+.header-title {
+  height: 117px;
+}
+
+.section__header {
+  color: var(--accent-color);
+  font-weight: var(--accent-font-weight);
+  font-size: 18px;
+}
+
+.section__subheader {
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
+  margin-block-start: 20px;
+}
+
+.section-padding {
+  padding: 50px 10px 0;
+}
+
+.section__list {
+  margin-block-start: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.section__list-item {
+  display: grid;
+  gap: 10px;
+}
+
+.section__howto .section__list-item_header{
+  font-weight: var(--basic-font-weight);
+}
+
+.text_link {
+  text-decoration: none;
+  text-shadow:2px 1px var(--accent-color);
+}
+
+.text_link:hover {
+  border-bottom: 1px solid var(--content-color);
+}
+
+.text_link:focus {
+  outline: none;
+}
+
+.text_link:focus-visible {
+  outline: 1px solid var(--content-color);
+  outline-offset: 3px;
+}
+
+.gallery-container {
+  margin-block-start: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 142px 355px 237px 355px 237px;
+}
+
+.gallery-container-item {
+  overflow: hidden;
+}
+
+.gallery-image {
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  width: 355px;
+}
+
+.footer {
+  position: relative;
+  min-height: 668px;
+  margin-block-start: 40px;
+  display: grid;
+}
+
+.footer .page-header {
+  align-self: center;
+  justify-self: center;
 }

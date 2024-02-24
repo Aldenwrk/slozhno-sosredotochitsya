@@ -13,4 +13,5 @@
   --basic-font-weight: 400;
   --accent-font-weight: 700;
   --background-url:url(/images/cover-image-dark.png);
+  --decoration-display: block;
 }

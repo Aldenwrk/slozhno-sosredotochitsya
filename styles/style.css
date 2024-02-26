@@ -157,7 +157,7 @@
 .section__list {
   margin-block-start: 20px;
   display: grid;
-  gap: 22px;
+  gap: 24px;
 }
 
 .section__list-item {
@@ -165,8 +165,16 @@
   gap: 10px;
 }
 
+.section__what {
+  padding-block-start: 53px;
+}
+
 .section__howto .section__list-item_header {
   font-weight: var(--basic-font-weight);
+}
+
+.section__howto {
+  padding-block-start: 51px;
 }
 
 .text_link {
@@ -188,7 +196,7 @@
 }
 
 .section__gallery {
-  padding-block-start: 55px;
+  padding-block-start: 46px;
 }
 
 .gallery-container {

@@ -8,10 +8,13 @@
   --banner-color: #db00ff;
   --background-color: #000028;
   --accent-color: #ff0070;
+  --button-color: #ff0070;
+  --button-hover: #FF007066;
+  --s-header-color: #ff0070;
   --accent-text-color: #000028;
   --content-color: #F1B2CE;
   --basic-font-weight: 400;
   --accent-font-weight: 700;
-  --background-url:url(/images/cover-image-dark.png);
+  --background-url:url(../images/cover-image-dark.png);
   --decoration-display: block;
 }
